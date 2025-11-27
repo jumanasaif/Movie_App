@@ -33,6 +33,11 @@ migrate_working_dir/
 /build/
 /coverage/
 
+# API Keys and sensitive data
+.env
+*.env
+
+
 # Symbolication related
 app.*.symbols
 

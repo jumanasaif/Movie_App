@@ -4,9 +4,13 @@ import 'package:movie_app/data/models/cast_member.dart';
 import 'package:movie_app/data/models/media_details_model.dart';
 import 'package:movie_app/data/models/movie_model.dart';
 import 'package:movie_app/data/models/video.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class ApiService {
-  static const String _apiKey = '4a6b204edac5537cdeaa1868ba388b94';
+  static String get _apiKey {
+    return dotenv.get('TMDB_API_KEY', fallback: '');
+  }
+
   static const String _language = 'en-US';
   static const Duration _timeout = Duration(seconds: 10);
 
