@@ -4,29 +4,56 @@ The app uses **The Movie Database (TMDb) API** and **Riverpod** for state manage
 
 ---
 
-## 📱 Features
+## 📱 **Features**
 
 ### ⭐ Core Functionality
-- Users can browse both **Movies** and **TV Shows** through well-organized categories, including:
 
-  - Popular Movies / TV Shows
+Users can browse Movies, TV Shows, and People using rich, well-structured categories:
 
-  - Top Rated Movies / TV Shows
+#### 🎬 Movies & TV Shows Categories
+- **Popular Movies / TV Shows**
+- **Top Rated Movies / TV Shows**
+- **Now Playing Movies / On Air TV Shows**
+- **Genre-based Filtering & Sorting**
+- **Search for any Movie or TV Show**
+- **Infinite Scroll + Smooth Pagination**
 
-  - Now Playing Movies / On Air TV Shows
+---
 
-- View detailed pages:
-  - Title, Poster, Backdrop
-  - Overview / Description
-  - Genres &Runtime
-  - Rating & Release Date
-  - Budget & Revenue
-  - Cast & Actors
-  - Similar Movie / TV  &  Videos
-  
-- Search & Filter for any movie or TV show
-- Infinite Scroll + Smooth Pagination
-- Polished UI with modern design
+### 🧑‍🎬 People / Cast / Crew
+The app includes full support for TMDb People API, allowing users to browse:
+
+- Popular Actors  
+- Directors  
+- Writers  
+- Producers  
+- Crew Members  
+
+Each person has a full detail page that includes:
+
+- Profile Image  
+- Name & Department (Acting, Directing, etc.)  
+- Popularity Score  
+- Movies and TV Shows they participated in  
+- Full biography (if available)
+
+---
+
+### 📄 Detailed Media Pages (Movie & TV Details)
+
+Each Movie / TV Show includes:
+
+- Poster & Backdrop Images  
+- Title  
+- Overview / Description  
+- Genres  
+- Runtime (Movies) / Episode Runtime (TV)  
+- Release Date / First Air Date  
+- Rating  
+- Budget & Revenue (Movies)  
+- Cast & Actors  
+- Videos (Trailers, Clips)  
+- Similar Movies / Similar TV Shows  
 
 ### ❤️ User Features
 - **Favorites System** (Movies + TV)
@@ -58,7 +85,8 @@ The app uses **The Movie Database (TMDb) API** and **Riverpod** for state manage
 
 ## 🧩 **Project Structure**
 
-lib/ ├── core/ │ ├── theme/ | ├── data/ │ ├── models/ │ ├── services/ │ └── repositories/ │ ├── presentation/ │ ├── screens/ │ ├── widgets/ │ ├── providers/ ├── routes/ └── main.dart
+<img width="367" height="356" alt="image" src="https://github.com/user-attachments/assets/4a1694f4-2205-4af7-b54b-cde434cb14f9" />
+
 ---
 
 ## 🔌 **API Integration (TMDb)**
